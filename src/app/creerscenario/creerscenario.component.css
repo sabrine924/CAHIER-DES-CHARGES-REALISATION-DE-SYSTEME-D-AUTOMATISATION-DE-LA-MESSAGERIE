@@ -1,0 +1,264 @@
+h1{
+    color: rgb(153, 144, 192);
+}
+h3{
+    color:rgb(19, 154, 207);
+    text-decoration: underline;
+    text-decoration-style: solid;
+
+    
+}
+
+.vertical {
+  border-left: 6px solid black;
+            height:90px;
+            position:absolute;
+            left: 50%;
+            bottom: 0px;
+            top:95px;
+            border-width: thin;
+          
+}
+
+ 
+
+  .app-title {
+      background: #123456;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      margin-bottom: 50px;
+  }
+  
+  .example-box {
+    width: 600px;
+    height: 100px;
+    border: solid 1px #ccc;
+    color: rgba(0, 0, 0, 0.87);
+    cursor: move;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #123456;
+    border-radius: 4px;
+    margin-right: 25px;
+    margin-left: 50px;
+    position: relative;
+    z-index: 1;
+    box-sizing: border-box;
+    padding: 10px;
+    transition: box-shadow 200ms cubic-bezier(0, 0, 0.2, 1);
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2),
+                0 2px 2px 0 rgba(0, 0, 0, 0.14),
+                0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  }
+  
+  .example-box:active {
+    box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+                0 8px 10px 1px rgba(0, 0, 0, 0.14),
+                0 3px 14px 2px rgba(0, 0, 0, 0.12);
+  }
+  
+  .example-boundary {
+    width: 400px;
+    height: 400px;
+    max-width: 100%;
+    border: dotted #ccc 2px;
+  }
+
+         
+
+.drapp{
+    background-color:white;
+    width: 350px;
+    height: 90px;
+ 
+}
+
+.dndDropArea{
+    height: 1800px;
+    width: 700px;
+    position: absolute;
+    right: 600px;
+    left: 1100px;
+    top: 310px ;
+    background-color: white;
+    
+}
+.example-card {
+    border-width: 200px;
+    height: 2000px;
+    width: 1630px;
+    display: block;
+    background-color:rgb(179, 213, 245) ;
+    border: 300px; 
+    
+  }
+  .mat-tab-group {
+    margin-bottom: 10px;
+  }
+  .app-box:hover{
+    box-shadow: 1px 1px 4px #999;
+}
+.app-box .remove{
+    position: absolute;
+    right: 21px;
+    top: 0px;
+    color: #545454;
+    display:none;
+}
+.app-box:hover .remove{
+    display:block;
+}
+.inline-btn{
+    background: #00b970;
+    padding: 1px 5px;
+    color: white;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.box{
+    padding: 10px;
+    margin-bottom:10px;
+    overflow: auto;
+    box-shadow: 1px 1px 4px #ddd;
+}
+.form-group .form-control{
+    font-size:inherit;
+    background-color: inherit;
+}
+.dndDropArea.empty{
+  min-height:200px;
+  border: dotted #ddd 2px;
+}
+
+.field{
+  padding:5px;
+  margin-bottom:10px;
+  position: relative;
+}
+.field:hover{
+  box-shadow: 1px 1px 4px #ddd;
+}
+.toggle-Wrapper{
+  padding: 15px;
+  background: #d6d6d629;
+}
+.dndHandle{
+  position: absolute;
+  cursor: pointer;
+  color: white;
+  right:580px;
+
+}
+.dndDraggingSource{
+  opacity:0.3;
+}
+.dndPlaceholder{
+  background: rgb(228, 243, 243); border-radius: 2px; padding: 20px;
+  margin-bottom:10px;
+}
+.field .fa{
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  font-size: 24px;
+  vertical-align: middle;
+
+}
+.red{color:#d9534f}
+.fa-trash{color:#d9534f}
+.marginT60{
+  margin-top:60px;
+}
+
+.color-red{color:red;}
+.report-block{
+  padding:10px;
+  background:#f8f8f8;
+  margin-bottom:20px;
+}
+.report-block .row:nth-child(even){
+  background:#fff;
+}
+
+.ftheme{
+  width:100%;
+}
+
+.dndDropArea .field .fa{
+  opacity:0;
+}
+.dndDropArea .field:hover .fa{
+  opacity:1;
+}
+
+.colorpick{
+  height: 25px;
+  background: white;
+  border: none;
+}
+.param{
+  background-color: #a1b6e6; 
+  border: none;
+  color: white;
+  padding: 10px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 19px;
+
+}
+
+/* HeroesComponent's private CSS styles */
+.heroes {
+  margin: 0 0 15em 0;
+  list-style-type: none;
+  padding: 0;
+  width: 15em;
+}
+.heroes li {
+  cursor: pointer;
+  position: relative;
+  left: 0;
+  background-color: #EEE;
+  margin: .5em;
+  padding: .3em 0;
+  height: 1.6em;
+  border-radius: 4px;
+}
+
+
+.heroes li.selected:hover {
+  background-color: #123456;
+  color: white;
+}
+.heroes li.selected:active {
+  background-color: black;
+  color: white;
+}
+.heroes .badge {
+  display: inline-block;
+  font-size: small;
+  color: white;
+  padding: 0.8em 0.7em 0 0.7em;
+  background-color:#405061;
+  line-height: 1em;
+  position: relative;
+  left: -1px;
+  top: -4px;
+  height: 1.8em;
+  margin-right: .8em;
+  border-radius: 4px 0 0 4px;
+}
+
+input {
+  padding: .5rem;
+}
+#param{
+  position: absolute;
+  left:500px;
+  color:white;
+
+}

@@ -1,0 +1,47 @@
+
+  <h1 class="app-title">AUTOMATISATION DE LA 
+    MESSAGERIE</h1>
+
+<h1>Créer Email Template</h1>
+    <mat-card class="example-card1">
+      <mat-card-header>
+        <mat-card-title>Des valeurs a ajouter au modele</mat-card-title>
+      </mat-card-header>
+</mat-card>
+  
+  <mat-card class="example-card">
+    <mat-card-header>
+      <mat-card-title>Formulaire du modèle</mat-card-title>
+    </mat-card-header>
+
+<mat-card-content>
+<section class="example-section" [formGroup]="Typeemail">
+
+ <mat-checkbox formControlName="consultable">Consultable</mat-checkbox>&nbsp;&nbsp;
+ &nbsp;&nbsp;<mat-checkbox formControlName="modifiable">Modifiable</mat-checkbox>
+ &nbsp;&nbsp;<mat-checkbox formControlName="confirmable">Confirmable</mat-checkbox>
+
+</section>
+
+<!--<section class="example-section" [formGroup]="Typeemail">
+  <h4>Vous avez choisi :</h4>
+  {{Typeemail.value | json}}
+</section>-->
+<div class="container">
+      <form [formGroup] = "formdata" (ngSubmit) = "onClickSubmit(formdata.value)" class="forms">
+       
+    <div class="form-group"> 
+          <label for="email">Contenu*:</label>
+          <angular-editor 
+          [placeholder]="'Enter text here...'" formControlName="description" >
+          </angular-editor>
+          <div *ngIf="formdata.controls.description.errors && formdata.controls.description.touched" class="error">description is required(Max 400 - Min 5).</div>
+       
+      </div>
+      </form>
+  </div>
+
+      
+</mat-card-content>
+
+</mat-card>

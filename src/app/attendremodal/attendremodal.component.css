@@ -1,0 +1,80 @@
+.example-card {
+    max-width: 1000px;
+    height: 700px;
+    left: 180px;
+    right: 200px;
+    background-color:rgb(179, 213, 245) ;
+ 
+  }
+  h2{
+      font-style: oblique;
+      color: rgb(16, 12, 211);
+  }
+  .nextbutton{
+    left:560px;
+    bottom: 60px;
+    border-width: 30px;
+    width:170px;
+    background-color: white;
+    border-width: 300px;
+   
+}
+h1 {
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  h1:before,
+  h1:after {
+    background-color: #000;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+  }
+  
+  h1:before {
+    right: 0.5em;
+    margin-left: -50%;
+  }
+  
+  h1:after {
+    left: 0.5em;
+    margin-right: -50%;
+  }
+  textarea[name=monTexte]
+{
+ resize : both;
+ min-width : 400px;
+ min-height : 100px;
+ max-width : 600px;
+ max-height : 100px;
+
+}
+.description {
+  float: left;
+  width: 10em;
+  margin-right: 1em;
+  }
+  .radio {
+    width:300px;
+    color:#000000;
+    font-size:10px;
+    padding-left:11px;
+    padding-top:7px;
+    float:left;    
+  }
+
+  .close{
+    display: block;
+    border: 1px solid #0066ff;
+    position:relative;
+    left:95%;
+    bottom: 50px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+ 

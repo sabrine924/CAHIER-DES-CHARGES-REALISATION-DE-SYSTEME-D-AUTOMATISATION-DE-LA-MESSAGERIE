@@ -1,0 +1,35 @@
+
+<mat-dialog-content>
+ 
+    <mat-card class="example-card">
+        <h1>Choisissez votre type de message </h1>
+        <button type="button" #closebutton class="close"  mat-dialog-close>&times;</button>
+        <mat-radio-group >
+            <mat-card class="mail"  >
+                <img
+                src="assets/mailicon1.jpg"
+                class="rounded-circle" width= "210px" 
+              /> <br>
+
+           &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <mat-radio-button value="m" font-size="130px" id="email"   (click)="ListTemplates()" >E-Mail</mat-radio-button>
+        </mat-card>
+    <mat-card class="sms">
+        <img
+        src="assets/smsicon1.jpg"
+        class="rounded-circle" width= "210px" 
+      /> <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <mat-radio-button value="s" font-size="130px" id="sms" (click)=" ListTemplatessms()">SMS</mat-radio-button>
+        </mat-card>
+          </mat-radio-group> 
+    </mat-card>
+
+   
+ 
+</mat-dialog-content>
+
+<mat-dialog-actions>
+ 
+   <!-- <button mat-button class="nextbutton" color="primary"  (click)="ListTemplates()">Suivant</button>-->
+   
+</mat-dialog-actions>
+

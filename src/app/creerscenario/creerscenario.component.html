@@ -1,0 +1,134 @@
+
+<div class="row">
+    <h1 class="app-title">AUTOMATISATION DE LA 
+      MESSAGERIE</h1>
+    </div>
+    <br>
+    <br>
+    <br>
+<mat-card class="example-card">
+  <mat-card-content>
+<div class="col-4">
+  
+<mat-tab-group animationDuration="400ms" [(selectedIndex)]="demo1TabIndex">  
+
+  <mat-tab label="Blocks"> 
+    &nbsp;&nbsp;&emsp;
+    <div style="height: 750px;overflow-y: auto;">
+      <div></div>
+ <div class="col-12"  class ="zonedrag" *ngFor="let item of fieldModels   ; let i = index" 
+ [style.font-Size.px]="30">
+ 
+ <div class="field pointer shadow-bg"  style="margin-bottom: 10px;margin-right: 5px" 
+ [dndDraggable]="item"
+ [dndEffectAllowed]="'all'" 
+  (dndStart)="onDragStart($event)"
+  (dndMoved)="onDraggableMoved($event)"
+  (dndCanceled)="onDragCanceled($event)"
+ (dndEnd)="onDragEnd($event)">
+ <i [ngClass]="item.icon" class="fa pull-left" style="font-size: 30px"></i>
+ <span> &nbsp;&nbsp; {{item.label}}  </span>
+
+
+ </div>
+</div>
+</div>
+
+</mat-tab> 
+&nbsp;&nbsp;
+<mat-tab label="attributs"> 
+  <ul class="heroes">
+  <li *ngFor="let attribut of  attributs"
+    [class.selected]="attribut === selectedattribut"
+    (click)="onSelect(attribut)">
+    <span>{{attribut.name}}</span>     </li>  </ul>
+    <div *ngIf=" selectedattribut &&  selectedattribut.type=='date'">
+
+
+<i (click)="Showmodalfilter()" >{{selectedattribut.name}} </i>
+    </div>
+    <div *ngIf=" selectedattribut &&  selectedattribut.type=='string' && selectedattribut.name=='CiviliteClient'">
+
+     
+      <i (click)="Showmodalfiltermodalselect()" >{{selectedattribut.name}} </i>
+
+          </div>
+          <div *ngIf=" selectedattribut &&  selectedattribut.type=='string' && selectedattribut.name=='NationaliteClient'">
+            <i (click)="showmodalselectNationalite()" >{{selectedattribut.name}} </i>
+          </div>
+          <div *ngIf=" selectedattribut &&  selectedattribut.type=='string' && selectedattribut.name=='SituationFamilialeClient'">
+            <i (click)="selectSituationFamilialeClient()" >{{selectedattribut.name}} </i>
+          </div>
+
+          <div *ngIf=" selectedattribut &&  selectedattribut.type=='number'">
+
+
+            <i (click)="Showmodalfilter()" >{{selectedattribut.name}}</i>
+           
+                </div>
+   
+
+ 
+  </mat-tab>
+</mat-tab-group>
+</div>
+</mat-card-content>
+</mat-card>
+
+
+<div class="col-4" >
+
+  <section class = "dndDropArea" 
+  [dndDropzone]="[]"
+  (dndDragover)="onDragover($event)"
+  (dndDrop)="onDrop($event,model.attributes)" class="dndDropArea"> 
+
+  <div class="example-box"   *ngFor="let item of model.attributes; let lastItem = last ;let firstItem = first; let i = index "
+  style="margin-bottom: 50px; margin-right: 10px; font-size: 80px;"
+    [dndDraggable]="item" 
+    [style.font-Size.px]="100"> 
+   
+    <div class = "vertical"*ngIf="!lastItem" >
+    </div>
+    <div class="row form-group">
+      <div class="col-1">
+      <i class="fa fa-ellipsis-v dndHandle"     [style.font-Size.px]="40">
+        </i>
+      </div> 
+      <div class="col-24" class="drapp">
+        &nbsp;&nbsp;
+       <i [ngClass]="item.icon" class="fa pull-left" style="font-size: 30px"></i>
+       <i (click)="removeField()" class="fa fa-trash pull-right" style="font-size: 40px"></i>
+       <div   [style.font-Size.px]="20"  > 
+<div *ngIf="item.id=='envoyer'">
+  <i  (click)="Showmodaltypemessage()"  class="fa fa-cog fa-spin fa-3x fa-fw pull-right" id="param" style="font-size: 40px"></i>
+</div>
+<div *ngIf="item.id=='filtrer'">
+  <i  (click)="demo1BtnClick()"  class="fa fa-cog fa-spin fa-3x fa-fw pull-right" id="param" style="font-size: 40px"></i>
+</div>
+<div *ngIf="item.id=='attendre'">
+  <i   (click)="Showattendremodal()"  class="fa fa-cog fa-spin fa-3x fa-fw pull-right" id="param" style="font-size: 40px" ></i>
+</div>
+
+ <span>   {{item.label}}</span>
+   
+   
+  
+    
+        
+        </div> 
+  
+    
+    
+   <!--<span><button class="params" style="font-size: 17px" *ngIf="i===1 && !lastItem &&  !firstItem" >Paramètre1 </button></span>   
+     <span><button class="params" style="font-size: 20px" *ngIf="i===2" >Paramètre2 </button></span>  
+     <span><button class="params" style="font-size: 20px" *ngIf="i===3" >Paramètre3 </button></span>  --> 
+    
+      </div>
+    </div>
+  </div>
+
+
+  </section>
+
+ 

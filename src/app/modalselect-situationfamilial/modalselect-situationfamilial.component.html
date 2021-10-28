@@ -1,0 +1,24 @@
+
+<mat-card class="example-card">
+    <h1 mat-dialog-title>Saisir Vos Critères</h1>
+    <button type="button" #closebutton class="close" mat-dialog-close>&times;</button>
+    <div mat-dialog-content>
+       
+        <label for="Critère">Choisir une SituationFamiliale:</label>
+        &nbsp;&nbsp;  &nbsp;&nbsp; <select name="critere" id="critere">
+          <option value="marié">marié (M) </option>
+          <option value="pacsé">pacsé (O)</option>
+          <option value="divorcé "> divorcé (D)</option>
+          <option value="séparé"> séparé (D)</option>
+          <option value="célibataire">  célibataire (C) </option>
+          <option value="veuf"> veuf (V)</option>
+        </select>
+  
+      
+  </div>
+</mat-card>
+    <div mat-dialog-actions>
+        <button mat-button class="nextbutton" color="primary"  >Suivant</button> 
+    </div>
+
+

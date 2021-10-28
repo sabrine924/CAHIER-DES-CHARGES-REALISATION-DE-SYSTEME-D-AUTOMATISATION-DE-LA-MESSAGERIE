@@ -1,0 +1,78 @@
+<br>
+<mat-dialog-content>
+ 
+    <mat-card class="example-card">
+        <h2>Configurer Votre Scenario  </h2>
+        <button type="button" #closebutton class="close" mat-dialog-close>&times;</button>
+        <h1>Horaire</h1>
+        <br>
+       <label>Date Debut :</label>
+        <input type="date" id="start" name="trip-start"
+       value="2021-07-25">
+       &nbsp;&nbsp;  &nbsp;&nbsp; &nbsp;&nbsp; <label>Date Fin :</label>
+        <input type="date" id="fin" name="trip-start"
+        value="2021-07-25">
+        <br>
+        <br>
+         <h1>Fréquence</h1>
+         <mat-form-field>
+            <mat-select [(value)]="selected" placeholder="Select value"
+            name="evaluationRuleField">
+               <mat-option *ngFor="let evaluationRuleField of evaluationRuleFields"  [value]="evaluationRuleField" >
+                   {{evaluationRuleField.viewValue}}
+               </mat-option>
+           </mat-select>
+        </mat-form-field>
+
+         <div *ngIf="selected">
+            <div    *ngIf="selected.valueFieldType === 'Quotidien'">
+                <p>se produit chaque:</p>
+          <p> 
+              <input type="number" formControlName="evaluationRuleValue"/> <label>Jour(s)</label>
+              </p>
+          </div>
+            <div   *ngIf="selected.valueFieldType === 'Mensuelle'">
+                <p>se produit chaque:</p>
+               <p>
+               <input type="number" formControlName="evaluationRuleValue"/> <label>Mois</label> 
+            </p>
+           </div>
+                <div   *ngIf="selected.valueFieldType === 'Hebdomadaire'">
+                    <p>se produit chaque:</p>
+                    <label class="radio"><input type="radio" />Lundi</label>
+                    <label class="radio"><input type="radio" />Mardi</label>
+                    <label class="radio"><input type="radio" />Mercredi</label>
+                    <label class="radio"><input type="radio" />Jeudi</label>
+                    <label class="radio"><input type="radio" />Vendredi</label>
+                    <label class="radio"><input type="radio" />Samedi</label>
+                    <label  class="radio"><input type="radio" />Dimanche</label>
+                   
+         
+     </div>
+        
+    </div>
+        
+
+         <br>
+        <br>
+        <br>
+        <br>
+      
+     
+      
+         <h1>Summury</h1>
+         <label class="description" >Description:</label>
+         &nbsp;&nbsp; <textarea name=monTexte   rows="5" cols="93">Enter description here ...</textarea>
+        
+   
+    </mat-card>
+
+   
+ 
+</mat-dialog-content>
+
+<mat-dialog-actions>
+    <button mat-button class="nextbutton" color="primary" >Suivant</button> 
+</mat-dialog-actions>
+
+

@@ -1,0 +1,312 @@
+h1{
+    color: rgb(153, 144, 192);
+}
+h3{
+    color:rgb(23, 173, 233);
+    text-decoration: underline;
+    text-decoration-style: solid;
+
+    
+}
+
+.example-section {
+    margin: 12px 0;
+  }
+  .example-card{
+    border-width: 200px;
+    height: 800px;
+    width: 1200px;
+    background-color: rgb(252, 223, 233);
+    left: 20px;
+    bottom: 700px;
+  }
+  .container{
+    background-color:white;
+    height: 600px;
+   
+  }
+  .form-group{
+    background-color: rgb(120, 202, 202);
+    width: 800px;
+    height: 500px;
+    bottom: 140px;
+    left:200px ;
+    position: absolute;
+  }
+  .forms{
+    background-color:white;
+    width: 500px;
+    height: 600px;
+ 
+  }
+  .example-card1{
+    border-width: 100px;
+    left :1300px;
+    right :0px;
+    width: 350px;
+    height:700px;
+    bottom: 30px;
+
+
+  }
+  .carddropzone{
+      position: center;
+      left:200px;
+      right:500px;
+  }
+
+  
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+  .app-title {
+      background: #123456;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      margin-bottom: 50px;
+  }
+  
+  .btn {
+      margin: 5px;
+  }
+
+   .clearfix{clear:both;}
+.pointer{cursor: pointer;}
+.ucfirst{text-transform: capitalize;}
+.min300{min-height:300px}
+.app-box{
+    padding: 10px;
+    margin-bottom:20px;
+    height: 230px;
+    background: #b5e8d4;
+    overflow: hidden;
+    box-shadow: 1px 1px 4px #ccc;
+}
+.app-box:hover{
+    box-shadow: 1px 1px 4px #999;
+}
+.app-box .remove{
+    position: absolute;
+    right: 21px;
+    top: 0px;
+    color: #545454;
+    display:none;
+}
+.app-box:hover .remove{
+    display:block;
+}
+.inline-btn{
+    background: #00b970;
+    padding: 1px 5px;
+    color: white;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.box{
+    padding: 10px;
+    margin-bottom:10px;
+    overflow: auto;
+    box-shadow: 1px 1px 4px #ddd;
+}
+.form-group .form-control{
+    font-size:inherit;
+    background-color: inherit;
+}
+
+.dndDropArea{
+    padding: 10px;
+    /* border: dotted #ddd 2px; */
+}
+
+.dndDropArea.empty{
+    min-height:200px;
+    border: dotted #ddd 2px;
+}
+
+.field{
+    padding:5px;
+    margin-bottom:10px;
+    position: relative;
+}
+.field:hover{
+    box-shadow: 1px 1px 4px #ddd;
+}
+.toggle-Wrapper{
+    padding: 15px;
+    background: #d6d6d629;
+}
+.dndHandle{
+    cursor: pointer;
+    color: #999;
+}
+.dndDraggingSource{
+    opacity:0.3;
+}
+.dndPlaceholder{
+    background: rgb(206, 238, 238); border-radius: 2px; padding: 20px;
+    margin-bottom:10px;
+}
+.field .fa{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    font-size: 24px;
+    vertical-align: middle;
+
+}
+.red{color:#d9534f}
+.fa-trash{color:#d9534f}
+.marginT60{
+    margin-top:60px;
+}
+
+.color-red{color:red;}
+.report-block{
+    padding:10px;
+    background:#f8f8f8;
+    margin-bottom:20px;
+}
+.report-block .row:nth-child(even){
+    background:#e6d0d0;
+}
+
+.ftheme{
+    width:100%;
+}
+
+.dndDropArea .field .fa{
+    opacity:0;
+}
+.dndDropArea .field:hover .fa{
+    opacity:1;
+}
+
+.colorpick{
+    height: 25px;
+    background: white;
+    border: none;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+  .app-title {
+      background: #123456;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      margin-bottom: 50px;
+  }
+  
+  .btn {
+      margin: 5px;
+  }
+
+body {
+    font-family:"trebuchet ms",sans-serif;
+    font-size:100%;
+    }
+   form {
+    background-color:#FAFAFA;
+    padding: 70px;
+    width:500px;
+    
+    }
+   fieldset {
+    padding:0 20px 20px 40px;
+    margin-bottom:10px;
+    border:1px solid #51b1c9;
+    }
+   legend {
+    color:#2001ad;
+    font-weight:lighter
+   
+
+    }
+   label {
+    margin-top:10px;
+    display:block;
+    }
+   label.inline {
+    display:inline;
+    margin-right:50px;
+    }
+   input, textarea, select, option {
+    background-color:#e6cbdf;
+    height: max-content;
+    }
+   input, textarea, select {
+    padding:3px;
+    border:1px solid #F5C5C5;
+    border-radius:5px;
+    width:200px;
+    box-shadow:1px 1px 2px #C0C0C0 inset;
+    }
+   select {
+    margin-top:10px;
+    }
+   input[type=radio] {
+    background-color:transparent;
+    border:none;
+    width:10px;
+    }
+   input[type=submit], input[type=reset] {
+    width:100px;
+    margin-left:5px;
+    box-shadow:1px 1px 1px #D83F3D;
+    cursor:pointer;
+    }
+    .form1{
+        height: 300px;
+        background-color: rgb(179, 213, 245);
+        padding-left: 50px;
+        padding-top: 100px;
+        margin-left: 510px;
+      
+       
+    }
+    .firld1{
+        padding: 20px 10px 10px 50px ;
+      
+    }
+    footer{
+
+        background:#ccc;
+        
+        position:absolute;
+        
+        bottom:0;
+        
+        width:100%;
+        
+        padding-top:50px;
+        
+        height:50px;
+        
+        }
+    
